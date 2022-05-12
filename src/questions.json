@@ -1,0 +1,55 @@
+[
+    {
+      "id": 1,
+      "question": "When does a new moon occur?",
+      "questionType": "radio",
+      "answerOptions": [
+        { "option": "Every 15 days", "isCorrect": true },
+        { "option": "Every 10 days", "isCorrect": false },
+        { "option": "Every 11 days", "isCorrect": false },
+        { "option": "Every 9 days", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "When are the primitive data types in JavaScript?",
+      "questionType": "checkbox",
+      "answerOptions": [
+        { "option": "string", "isCorrect": true },
+        { "option": "boolean", "isCorrect": true },
+        { "option": "object", "isCorrect": false },
+        { "option": "array", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "List down all the lifecycle methods in React",
+      "questionType": "textInput",
+      "answerOptions": [{ "option": "componentDidMount", "isCorrect": true }]
+    },
+    {
+      "id":4 ,
+      "question": "Which of the following are the advantages of React.js?",
+      "questionType": "radio",
+      "answerOptions": [
+        { "option": "React.js can increase the application's performance with Virtual DOM.", "isCorrect": false },
+        { "option": "React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.", "isCorrect": false },
+        { "option": "React.js can render both on client and server side.", "isCorrect": false },
+        { "option": "All of the above", "isCorrect": true }
+      ]
+    },
+    {
+      "id":5 ,
+      "question": "What of the following is used in React.js to increase performance??",
+      "questionType": "radio",
+      "answerOptions": [
+        { "option": "Original DOM", "isCorrect": false },
+        { "option": "Virtual DOM", "isCorrect": true },
+        { "option": "Both A and B.", "isCorrect": false },
+        { "option": "None of the above.", "isCorrect": true }
+      ]
+    }
+    
+
+  ]
+  
