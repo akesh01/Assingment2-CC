@@ -7,6 +7,7 @@ import { CssBaseline } from "@mui/material";
 import Questions from "./pages/Questions";
 import ResultsPage from "./pages/Results";
 import AuthLayout from "./components/AuthLayout";
+import '../src/App.css';
 
 const initContextData = { answers: {},answered:false};
 const AppContext: any = React.createContext([]);
