@@ -2,9 +2,10 @@
 import { useContext } from "react";
 import { AppContext } from "../App";
 import { actions } from "../actions"
-import { Typography, Card, TextField } from "@mui/material";
+import { Typography, Card, TextField, Pagination } from "@mui/material";
 import RadioOptions from "./RadioOptions";
 import CheckboxOptions from "./CheckboxOptions";
+import Questions from "../pages/Questions";
 
 type QuestionCardProps = {
   id: number;
@@ -26,6 +27,7 @@ function QuestionCard({
 
   console.log("App data is", appData);
 
+
   return (
     <Card
       sx={{
@@ -35,6 +37,7 @@ function QuestionCard({
         overflowY: "auto",
       }}
     >
+
       <Typography variant="h5" marginBottom="2rem">
         {question}
       </Typography>
@@ -90,6 +93,7 @@ function QuestionCard({
         }
       })()}
     </Card>
+    
   );
 }
 

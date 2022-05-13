@@ -8,7 +8,7 @@ import Questions from "./pages/Questions";
 import ResultsPage from "./pages/Results";
 import AuthLayout from "./components/AuthLayout";
 
-const initContextData = { answers: {} };
+const initContextData = { answers: {},answered:false};
 const AppContext: any = React.createContext([]);
 
 declare module "@mui/material/styles" {
