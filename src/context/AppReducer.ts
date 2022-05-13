@@ -1,5 +1,6 @@
 type State = {
     answers: any;
+    answered:boolean;
   };
   
   type Action = {
@@ -18,6 +19,7 @@ type State = {
             ...state.answers,
             [action.payload.id]: action.payload.data,
           },
+          answered:true,
         };
       default:
         throw new Error();
