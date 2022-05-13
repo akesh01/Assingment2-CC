@@ -1,21 +1,25 @@
 import { useContext, useEffect, useState } from "react";
 import QuestionCard, { QuestionType } from "../components/QuestionCard";
 import questions from "../questions.json";
-import { Box, Button, Typography, CircularProgress, Pagination } from "@mui/material";
+import { Box, Button, Typography, CircularProgress, Pagination, makeStyles } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "../App";
 
 
+
 const TOTAL_QUESTIONS = questions.length;
-let colored:any ;
+
 const Questions = () => {
+  const [appData] = useContext(AppContext);
   const [currentQuestion, setCurrentQuestion] = useState(questions[0].id);
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
+  
   useEffect(() => {
     setTimeout(() => setIsLoading(false), 1000);
   }, []);
-   
+
+  
   function handleNextButtonClick(index: number) {
     if (index === TOTAL_QUESTIONS - 1) {
       navigate("/results");
@@ -43,7 +47,7 @@ const Questions = () => {
           (question, index) =>
             currentQuestion === question.id && (
               <Box key={question.id}>
-                  <Pagination count={TOTAL_QUESTIONS} variant="outlined" color="primary" hideNextButton={true} hidePrevButton={true} page={currentQuestion} onChange={HandlePaginationClick} />
+                  <Pagination count={TOTAL_QUESTIONS} variant="outlined" color="primary"  hideNextButton={true} hidePrevButton={true} page={currentQuestion} onChange={HandlePaginationClick} />
                 <Typography variant="h3">Question: {index + 1}</Typography>
                 <Box
                   height="500px"
